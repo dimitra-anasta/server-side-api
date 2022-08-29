@@ -22,16 +22,16 @@
     <div class="row">
       <div class="col-sm-3">
         <h3>Search for a City:</h3>
-        <form class="mt-3">
+        <form class="mt-3" id="search-form">
           <div class="form-group">
             <input
               type="text"
               class="form-control w-100"
-              id="text"
+              id="search-input"
               placeholder="Location"
             />
           </div>
-          <button type="submit" class="btn btn-primary mb-2 w-100">
+          <button type="submit" id="search-button" class="btn btn-primary mb-2 w-100">
             Search
           </button>
         </form>
@@ -68,22 +68,22 @@
         <h3>5-day Forecast</h3>
         <div class="row">
             <div class="col-sm-2">
-              <div class="card">
+              <div class="card" id="card1">
                 <div class="card-body">
                   <h5 class="card-title">3/31/2022</h5>
                   <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="" />
-                  <p class="card-text">Temp: 73°</p>
-                  <p>Wind: 8 MPH</p>
-                  <p>Humidity: 20%</p>
+                  <p class="card-text" id="temp1">Temp: 73°</p>
+                  <p id="wind1">Wind: 8 MPH</p>
+                  <p id="humidity1">Humidity: 20%</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-2">
               <div class="card">
-                <div class="card-body">
+                <div id="card2" class="card-body">
                   <h5 class="card-title">4/1/2022</h5>
                   <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
-                  <p class="card-text">Temp: 75°</p>
+                  <p id="temp2" class="card-text">Temp: 75°</p>
                   <p>Wind: 10 MPH</p>
                   <p>Humidity: 10%</p>
                 </div>
