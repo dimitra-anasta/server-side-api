@@ -55,18 +55,17 @@
       <div class="col-sm-9">
         <div class="bg-white border border-dark mt-3">
           <div class="container mt-3">
-            <h3 class="">
+            <h3 class="header">
               Atlanta (3/30/2022)
               <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="" />
             </h3>
-            <p class="lead">Temp: 74°</p>
-            <p>Wind: 6.7 MPH</p>
-            <p>Humidity: 46%</p>
-            <p>UV Index: 8</p>
+            <p class="lead" id="tempHead">Temp: 74°</p>
+            <p id="windHead">Wind: 6.7 MPH</p>
+            <p id="humidityHead">Humidity: 46%</p>
           </div>
         </div>
         <h3>5-day Forecast</h3>
-        <div class="row">
+        <div id="cards" class="row">
             <div class="col-sm-2">
               <div class="card" id="card1">
                 <div class="card-body">
@@ -84,7 +83,7 @@
                   <h5 class="card-title">4/1/2022</h5>
                   <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
                   <p id="temp2" class="card-text">Temp: 75°</p>
-                  <p>Wind: 10 MPH</p>
+                  <p id="wind2">Wind: 10 MPH</p>
                   <p>Humidity: 10%</p>
                 </div>
               </div>
@@ -125,7 +124,7 @@
           </div>
       </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
